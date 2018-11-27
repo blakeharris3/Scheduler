@@ -36,6 +36,7 @@ By:
 -User will be able to register but must have an access key upon registration in order to create an account
 
 -User will then login and be able to see a news page with important information, or a schedule page with the photo's of that weeks schedule
+
 ---
 ## Struggles
 
