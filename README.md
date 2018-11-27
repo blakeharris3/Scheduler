@@ -3,12 +3,20 @@ Scheduler is an app that allows employers to post news and schedules online for 
 
 By:
 - Blake Harris
+---
 
+## Wireframe
 ![News Page](./images/news.png)
 ![Schedule Page](./images/schedule.png)
 ![Register Page](./images/register.png)
 ![Login Page](./images/login.png)
-
+---
+## Data Flow
+![Login Page](./images/data-flow.png)
+---
+## ERD
+![ERD](./images/erd.png)
+---
 ## Technologies
 - JavaScript
 - Node.js
@@ -16,7 +24,7 @@ By:
 - React
 - MongoDB
 - Mongoose
-
+---
 ## User Stories
 -Super User will be able to register with information and a validated SUPERUSER Key
 
