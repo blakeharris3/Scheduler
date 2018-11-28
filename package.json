@@ -1,0 +1,12 @@
+{
+  "name": "scheduler",
+  "version": "1.0.0",
+  "description": "Scheduler is an app that allows employers to post news and schedules online for their employees to view.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
