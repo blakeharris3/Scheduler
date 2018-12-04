@@ -1,6 +1,5 @@
 const express = require('express')
 const bodyParser = require('body-parser')
-const methodOverride = require('method-override')
 const session = require('express-session')
 const cors = require('cors') 
 require("./db/db");
@@ -14,7 +13,6 @@ app.use(session({
     resave: false,
     saveUninitialized: false
 }))
-app.use(methodOverride('_method'))
 app.use(bodyParser.urlencoded({extended: false}))
 app.use(bodyParser.json())
 
@@ -25,13 +23,15 @@ const corsOptions = {
   }
 app.use(cors(corsOptions));
 
+const scheduleController = require('./controllers/scheduleController');
+
+app.use('/schedule', scheduleController)
+
 
 app.get('/', async(req, res) => {
-    
-    console.log('You made it this far')
     res.send('Root of App')
 })
 
 app.listen(8000, () => {
-    console.log('Can you hear me now?')
+    console.log('We\'re on 8000')
 })
