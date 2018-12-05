@@ -1,30 +1,30 @@
-const express = require('express');
-const router = express.Router();
-const User = require('../models/user');
+// const express = require('express');
+// const router = express.Router();
+// const User = require('../models/user');
 
-router.post('/', async (req, res) => {
-  console.log(req.body, ' this is session')
-
-
-  try {
-
-    await User.create(req.body);
-    req.session.username = req.body.username;
+// router.post('/', async (req, res) => {
+//   console.log(req.body, ' this is session')
 
 
-    res.json({
-      status: 200,
-      data: 'login successful'
-    });
+//   try {
+
+//     await User.create(req.body);
+//     req.session.username = req.body.username;
 
 
-
-  } catch(err){
-    console.log(err);
-    res.send(err);
-  }
-});
+//     res.json({
+//       status: 200,
+//       data: 'login successful'
+//     });
 
 
 
-module.exports = router;
+//   } catch(err){
+//     console.log(err);
+//     res.send(err);
+//   }
+// });
+
+
+
+// module.exports = router;
