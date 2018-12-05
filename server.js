@@ -4,6 +4,7 @@ const session = require('express-session')
 const cors = require('cors') 
 require("./db/db");
 const app = express()
+const port =  process.env.PORT || 8000
 
 
 
@@ -24,14 +25,16 @@ const corsOptions = {
 app.use(cors(corsOptions));
 
 const scheduleController = require('./controllers/scheduleController');
+const newsController = require('./controllers/newsController')
 
 app.use('/schedule', scheduleController)
+app.use('/news', newsController)
 
 
 app.get('/', async(req, res) => {
     res.send('Root of App')
 })
 
-app.listen(8000, () => {
+app.listen({port}, () => {
     console.log('We\'re on 8000')
 })

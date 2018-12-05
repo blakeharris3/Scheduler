@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
-mongoose.connect('mongodb://localhost/scheduler', {useNewUrlParser: true})
-// mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/schedule', {useNewUrlParser: true})
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/scheduler', {useNewUrlParser: true})
+
 
 mongoose.connection.on('connected', () => {
     console.log('Mongoose is connected')
