@@ -35,6 +35,6 @@ app.get('/', async(req, res) => {
     res.send('Root of App')
 })
 
-app.listen({port}, () => {
-    console.log('We\'re on 8000')
+app.listen(port, () => {
+    console.log(`We're on ${port}`)
 })
