@@ -18,7 +18,7 @@ app.use(bodyParser.urlencoded({extended: false}))
 app.use(bodyParser.json())
 
 const corsOptions = {
-    origin: 'https://thescheduler.netlify.com/',
+    origin: 'https://thescheduler.netlify.com',
     credentials: true,
     optionsSuccessStatus: 200
   }
